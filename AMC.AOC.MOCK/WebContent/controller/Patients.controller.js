@@ -41,6 +41,9 @@ sap.ui.define(
 						oBinding.filter(aFilters);
 					}
 					
+				},
+				onPatientTilePress: function(oEvent){
+					var oSource = oEvent.getSource();
 				}
 				
 			});

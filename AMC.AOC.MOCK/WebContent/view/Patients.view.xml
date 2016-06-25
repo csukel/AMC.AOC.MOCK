@@ -25,7 +25,7 @@
 							tiles="{patients>/Patient}"
 							height = "100%"
 							>
-							<CustomTile class = "myCustomTile sapUiSmallMarginEnd sapUiSmallMarginBottom">
+							<CustomTile class = "myCustomTile sapUiSmallMarginEnd sapUiSmallMarginBottom" press ="onPatientTilePress">
 								<content>
 								
 								<ObjectHeader class="myObjectItem"
