@@ -1,0 +1,52 @@
+{
+ "tabs":
+ 	[
+	 	{
+ 	 		"text": "All",
+ 	 		"icon": ""
+ 	 	},
+ 	 	{
+ 	 		"text": "Cath-Lab",
+ 	 		"icon": ""
+ 	 	},
+ 	 	{
+ 	 		"text": "ICU",
+ 	 		"icon": ""
+ 	 	},
+ 	 	{
+ 	 		"text": "OR",
+ 	 		"icon": ""
+ 	 	},
+ 	 	{
+ 	 		"text": "Ward",
+ 	 		"icon": ""
+ 	 	},
+ 	 	{
+ 	 		"text": "Outpatients",
+ 	 		"icon": ""
+ 	 	},
+ 	 	{
+ 	 		"text": "Transfers",
+ 	 		"icon": ""
+ 	 	}
+ 	],
+ "criteria_filters":
+	 [
+	  {
+		  "Criteria":"Name",
+		  "ID":"Name"
+	  },
+	  {
+		  "Criteria":"Surname",
+		  "ID":"Surname"
+	  },
+	  {
+		  "Criteria":"Gender",
+		  "ID":"Gender"
+	  },
+	  {
+		  "Criteria":"Room",
+		  "ID":"Room"
+	  }
+	  ]
+}

@@ -1,0 +1,349 @@
+{
+ "Patient":
+ 	[
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Lucy",
+ 	 		"Surname": "Hadjipavlou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "F",
+ 	 		"Room" : "221N553",
+ 	 		"Physician" :"Constantinos Hadjipolydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Andreas",
+ 	 		"Surname": "Hadjisergiou",
+ 	 		"Age" : 18,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "2224N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Danae",
+ 	 		"Surname": "Iacovidou",
+ 	 		"Age" : 32,
+ 	 		"Gender" : "F",
+ 	 		"Room" : "221N53",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	},
+	 	{
+ 	 		"Name": "Loucas",
+ 	 		"Surname": "Stylianou",
+ 	 		"Age" : 25,
+ 	 		"Gender" : "M",
+ 	 		"Room" : "221N3",
+ 	 		"Physician" :"Andreas Polydorou"
+ 	 	}
+ 	]
+}

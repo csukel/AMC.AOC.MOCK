@@ -1,0 +1,9 @@
+<mvc:View 
+	controllerName = "amc.aoc.controller.Transfers"
+	xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout"
+	xmlns:semantic="sap.m.semantic" xmlns:form="sap.ui.layout.form" >
+	
+	<semantic:FullscreenPage id = "transfers" title="{i18n>transfersTitle}" showFooter ="false" showNavButton="true" navButtonPress="onNavBack">
+	
+	</semantic:FullscreenPage>
+</mvc:View>

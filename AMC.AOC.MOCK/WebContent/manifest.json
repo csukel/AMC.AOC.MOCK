@@ -1,0 +1,118 @@
+{
+	"_version": "1.3.0",
+	"sap.app": {
+		"_version": "1.2.0",
+		"id": "amc.aoc",
+		"type": "application",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"i18n":"i18n/i18n.properties",
+		"description": "{{appDescription}}"
+	},
+	
+	
+	"sap.ui": {
+		"_version": "1.3.0",
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": ["sap_bluecrystal"]
+	},
+	
+	
+	"sap.ui5": {
+		"models":{		
+			"i18n" :{
+				"type" : "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName" : "amc.aoc.i18n.i18n"
+				}
+			},
+			"homepage_tabs":{
+				"type":"sap.ui.model.json.JSONModel",
+				"uri":"model/homepage_tabs.json"
+			},
+			"patients":{
+				"type": "sap.ui.model.json.JSONModel",
+				"uri":"model/patients.json"
+			},
+			"resources":{
+				"type":"sap.ui.model.json.JSONModel",
+				"uri":"model/resources.json"
+			}
+		},
+		
+		"resources" : {
+			"css": [
+			        {
+			        	"uri" : "css/style.css"
+			        }
+			        ]
+			
+		},
+		
+		"routing" : {
+			"config": {
+				"routerClass" : "sap.m.routing.Router",
+				"viewType" : "XML",
+				"viewPath" : "amc.aoc.view",
+				"controlId": "app",
+				"controlAggregation": "pages",
+				"async": true
+			},
+			"routes" : [
+				{
+					"pattern":"",
+					"name": "homepage",
+					"target": "homepage"
+				},
+				{
+					"pattern":"transfers",
+					"name":"transfers",
+					"target":"transfers"
+				}
+			],
+			"targets": {
+				"homepage": {
+					"viewName" : "Homepage",
+					"viewId": "homepage",
+					"viewLevel" : 1
+				},
+				"transfers":{
+					"viewName": "Transfers",
+					"viewId": "transfers",
+					"viewLevel":2
+				}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"_version": "1.2.0",
+		"rootView": {
+			"viewName": "amc.aoc.view.App",
+			"type": "XML",
+			"id": "app"
+		},
+		"dependencies": {
+			"minUI5Version": "1.2.0",
+			"libs": {
+				"sap.ui.core": {
+					"minVersion": "1.36.0"
+				},
+				"sap.m": {
+					"minVersion": "1.36.0"
+				},
+				"sap.ui.layout": {
+					"minVersion": "1.36.0"
+				}
+			}
+		}
+	}
+}

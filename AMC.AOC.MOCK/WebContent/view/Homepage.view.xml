@@ -1,0 +1,38 @@
+<mvc:View 
+	controllerName = "amc.aoc.controller.Homepage"
+	xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout"
+	xmlns:semantic="sap.m.semantic" xmlns:form="sap.ui.layout.form" >
+	
+	<semantic:FullscreenPage id = "homepage" title="{i18n>homepageTitle}" showFooter ="false">
+
+
+	<IconTabBar 
+		select="onIconTabBarSelect"
+		stretchContentHeight="true"
+		id="idIconTabBarNoIcons"
+		expanded="true"
+		class="sapUiResponsiveContentPadding "
+		items = "{homepage_tabs>/tabs}"
+		applyContentPadding="false"
+		upperCase = "true">
+		
+		<items>		
+			<IconTabFilter
+				id = "tab"
+				text="{homepage_tabs>text}"
+				key = "{homepage_tabs>text}"
+				>
+				<content >
+					<mvc:XMLView viewName = "amc.aoc.view.Patients"/> 
+				
+				</content>
+			</IconTabFilter>
+		</items>
+
+
+	</IconTabBar>
+	
+
+
+	</semantic:FullscreenPage>
+</mvc:View>
