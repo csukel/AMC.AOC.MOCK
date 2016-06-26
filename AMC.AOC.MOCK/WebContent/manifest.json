@@ -75,6 +75,11 @@
 					"pattern":"transfers",
 					"name":"transfers",
 					"target":"transfers"
+				},
+				{
+					"pattern":"ChargePatient/{patientIndex}",
+					"name":"ChargePatient",
+					"target":"ChargePatient"
 				}
 			],
 			"targets": {
@@ -86,6 +91,12 @@
 				"transfers":{
 					"viewName": "Transfers",
 					"viewId": "transfers",
+					"viewLevel":2
+				},
+
+				"ChargePatient":{
+					"viewName": "ChargePatient",
+					"viewId" : "ChargePatient",
 					"viewLevel":2
 				}
 			}
