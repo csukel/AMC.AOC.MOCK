@@ -77,7 +77,7 @@
 					"target":"transfers"
 				},
 				{
-					"pattern":"ChargePatient/{patientIndex}",
+					"pattern":"ChargePatient/{storage}/{patientIndex}",
 					"name":"ChargePatient",
 					"target":"ChargePatient"
 				}

@@ -5,32 +5,29 @@
 	
 }
 
-.myFormTile{
-	
-}
 
 .myIconTabFilterContent{
 	background-color:#3BB2AC;
 }
 
-.sapUiFormResLayout.sapUiFormBackgrTranslucent>div {
-	
-}
 
 .sapMSplitContainerHideMode>.sapMSplitContainerDetail .sapMITB.sapUiResponsiveContentPadding>.sapMITBContainerContent>.sapMITBContent, .sapMITB.sapUiResponsiveContentPadding>.sapMITBContainerContent>.sapMITBContent{
 	background-color:#3BB2AC;
 }
 
-
 .sapMOHRTitleTextContainer{
-	font-size: 1rem;
+	font-size: 1.1rem;
 }
-
-.sapMObjectNumberText {
-    font-size: 0.875rem !important; 
-}
-
 .sapMOHR {
     padding: 0.2rem 1rem 0 1rem;
 
+} 
+
+.sapMObjectNumberText {
+    font-size: 0.95rem !important; 
 }
+
+.customCancelButton {
+    background: orangered;
+}
+

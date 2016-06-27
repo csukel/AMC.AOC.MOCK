@@ -9,7 +9,7 @@ sap.ui.define(
 
 			return BaseController.extend("amc.aoc.controller.ChargePatient",{
 
-
+				formatter: formatter,
 				onInit: function () {
 					var oRouter = this.getRouter();
 					oRouter.getRoute("ChargePatient").attachPatternMatched(this._onObjectMatched, this);
@@ -19,6 +19,8 @@ sap.ui.define(
 						path: "/" + decodeURIComponent(oEvent.getParameter("arguments").patientIndex),
 						model: "patients"
 					});
+					var sTitle=this.getResourceBundle().getText("chargePatientTitle",oEvent.getParameter("arguments").storage);
+					this.getView().byId("chargePatient").setTitle(sTitle);
 				},
 
 				onNavBack : function(){
@@ -26,12 +28,18 @@ sap.ui.define(
 					var oHistory = History.getInstance(),
 					sPreviousHash = oHistory.getPreviousHash();
 
-					var component = this.getOwnerComponent();
-					var oView = component.byId("homepage");
-					var oIconTabBar = oView.byId("idIconTabBarNoIcons");
-					//oIconTabBar.setSelectedKey("__component0---homepage--tab-__component0---homepage--idIconTabBarNoIcons--header-0");
-					oIconTabBar.setSelectedKey("All");
-					//var homepageController = component.getHomepageController();
+					try {
+						var component = this.getOwnerComponent();
+						var oView = component.byId("homepage");
+						var oIconTabBar = oView.byId("idIconTabBarNoIcons");
+						//oIconTabBar.setSelectedKey("__component0---homepage--tab-__component0---homepage--idIconTabBarNoIcons--header-0");
+						oIconTabBar.setSelectedKey("All");
+						//var homepageController = component.getHomepageController();						
+						
+					}catch(err){
+						jQuery.sap.log.error("ChargePatient","onNavBack",err);
+					}
+
 
 					//homepageController.setSelectedTab();
 					if (sPreviousHash !== undefined){

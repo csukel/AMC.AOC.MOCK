@@ -3,31 +3,44 @@
 	xmlns:f="sap.ui.layout.form">
 
 	<semantic:FullscreenPage id="chargePatient"
-		title="{i18n>chargePatientTitle}" showFooter="false" showNavButton="true"
-		navButtonPress="onNavBack">
-		<VBox class="sapUiSmallMargin" >
-			<!-- <Button text="Click me"></Button> -->
-			<f:SimpleForm id="SimpleFormDisplay354"
-				maxContainerCols="2" editable="false" layout="ResponsiveGridLayout"
-				title="Patient's Info" labelSpanL="3" labelSpanM="3" emptySpanL="4"
-				emptySpanM="4" columnsL="1" columnsM="1">
-				<f:content>
-					<Label text="Name"/>
-					<Text text="{patients>Name}" />
-					<Label text="Surname" />
-					<Text text="{patients>Surname}" />
-					<Label text="Age" />
-					<Text text="{patients>Age}" />
-					<Label text="Gender" />
-					<Text text="{= ${patients>Gender} === 'M' ? 'Male' : 'Female'}" />
-					<Label text="Attending Physician" />
-					<Text text="{patients>Physician}" />
-					<Label text="Room" />
-					<Text text="{patients>Room}" />
-				</f:content>
-			</f:SimpleForm>
+		title="{i18n>chargePatientTitle}" showNavButton="true" navButtonPress="onNavBack">
 
-		</VBox>
+		<ObjectHeader icon="sap-icon://person-placeholder" title="{patients>Surname} {patients>Name}"
+			number="{patients>Age}Y">
+			<attributes>
+				<ObjectAttribute title="Attending Physician" text="{patients>Physician}" />
+				<ObjectAttribute title="Room" text="{patients>Room}" />
+			</attributes>
+			<firstStatus>
+				<ObjectStatus iconDensityAware="false"
+					icon="{
+							parts: ['patients>Gender'],
+							formatter: '.formatter.getGenderIcon'
+					}" />
+			</firstStatus>
+		</ObjectHeader>
+		<!-- <VBox class="sapUiSmallMargin"> <Button text="Click me"></Button> 
+			<f:SimpleForm id="SimpleFormDisplay354" maxContainerCols="2" editable="false" 
+			layout="ResponsiveGridLayout" title="Patient's Info" labelSpanL="3" labelSpanM="3" 
+			emptySpanL="4" emptySpanM="4" columnsL="1" columnsM="1"> <f:content> <Label 
+			text="Name" /> <Text text="{patients>Name}" /> <Label text="Surname" /> <Text 
+			text="{patients>Surname}" /> <Label text="Age" /> <Text text="{patients>Age}" 
+			/> <Label text="Gender" /> <Text text="{= ${patients>Gender} === 'M' ? 'Male' 
+			: 'Female'}" /> <Label text="Attending Physician" /> <Text text="{patients>Physician}" 
+			/> <Label text="Room" /> <Text text="{patients>Room}" /> </f:content> </f:SimpleForm> 
+			</VBox> -->
 
+		<semantic:positiveAction>
+			<semantic:PositiveAction text="{i18n>confirmButtonText}"
+				press="onConfirmButtonPressed" />
+		</semantic:positiveAction>
+		<semantic:cancelAction class="customCancelButton">
+			<semantic:CancelAction class="customCancelButton"
+				press="onCancel" />
+		</semantic:cancelAction>
+
+<!-- 		<semantic:customFooterContent>
+			<Button text="{i18n>cancelButtonText}" class="customCancelButton" press="onCancelButtonPressed" />
+		</semantic:customFooterContent> -->
 	</semantic:FullscreenPage>
 </mvc:View>

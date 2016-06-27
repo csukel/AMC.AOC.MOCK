@@ -6,17 +6,20 @@ sap.ui.define(
 		 function(BaseController,formatter,Filter,FilterOperator){
 			"use strict";
 			var oRouter = null;
+			var oComponent = null;
 			return BaseController.extend("amc.aoc.controller.Patients",{
-				
-				
+
+
 				formatter: formatter,
 				onInit : function (){
 					jQuery.sap.log.info("Patients","onInit","Patients controller");
+					var oItem = this.getView().byId("objectItem");
 				},
-				
+
 				onAfterRendering : function(){
 					jQuery.sap.log.info("Patients","onAfterRendering","Patients controller");
 					oRouter = this.getRouter();
+					oComponent = this.getOwnerComponent();
 				},
 				onBeforeRendering: function(){
 					jQuery.sap.log.info("Patients","onBeforeRendering","Patients controller");
@@ -57,9 +60,17 @@ sap.ui.define(
 					var oSource = oEvent.getSource();
 					var sPath = oSource.getBindingContext("patients").getPath();
 					//navigate to Charge Patient page
+
+					
+					var oView = oComponent.byId("homepage");
+					var oIconTabBar = oView.byId("idIconTabBarNoIcons");
+					
+					var sStorage = oIconTabBar.getSelectedKey();
 					
 					oRouter.navTo("ChargePatient",{
+						storage: encodeURIComponent(sStorage),
 						patientIndex: encodeURIComponent(sPath.substring(1))
+						
 					}); 
 				},
 

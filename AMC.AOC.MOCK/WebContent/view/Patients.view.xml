@@ -28,7 +28,8 @@
 							<CustomTile class = "myCustomTile sapUiSmallMarginEnd sapUiSmallMarginBottom" press ="onPatientTilePress">
 								<content>
 								
-								<ObjectHeader class="myObjectItem"
+								<ObjectHeader class="myCustomObjectHeader" 
+									id="objectItem"
 									responsive="true"
 									title= "{
 										parts:['patients>Surname','patients>Name'],
