@@ -44,6 +44,10 @@
 			"resources":{
 				"type":"sap.ui.model.json.JSONModel",
 				"uri":"model/resources.json"
+			},
+			"materials":{
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/materials.json"
 			}
 		},
 		
