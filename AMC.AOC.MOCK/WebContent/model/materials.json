@@ -17,6 +17,60 @@
 	            	  "MaterialDesc":"Panadol",
 	            	  "Quantity" : 30
 	            		  
+	              },
+	              {
+	            	  "MaterialId" :4,
+	            	  "MaterialDesc":"Plastic Bag",
+	            	  "Quantity" : 50
+	            		  
+	              },
+	              {
+	            	  "MaterialId" :5,
+	            	  "MaterialDesc":"Towelettes",
+	            	  "Quantity" : 100
+	            		  
+	              },
+	              {
+	            	  "MaterialId" :6,
+	            	  "MaterialDesc":"Baggies",
+	            	  "Quantity" : 20
+	            		  
+	              },
+	              {
+	            	  "MaterialId" :7,
+	            	  "MaterialDesc":"Panadol Extra",
+	            	  "Quantity" : 15
+	            		  
+	              },
+	              {
+	            	  "MaterialId" :8,
+	            	  "MaterialDesc":"Paper Towels",
+	            	  "Quantity" : 120
+	            		  
+	              },
+	              {
+	            	  "MaterialId" :9,
+	            	  "MaterialDesc":"Hand Sanitizer",
+	            	  "Quantity" : 25
+	            		  
+	              },
+	              {
+	            	  "MaterialId" :10,
+	            	  "MaterialDesc":"Urinals - male",
+	            	  "Quantity" : 25
+	            		  
+	              },
+	              {
+	            	  "MaterialId" :11,
+	            	  "MaterialDesc":"Cotton Balls",
+	            	  "Quantity" : 200
+	            		  
+	              },
+	              {
+	            	  "MaterialId" :12,
+	            	  "MaterialDesc":"Bandage Gauze Roll",
+	            	  "Quantity" : 15
+	            		  
 	              }
 	              
 	              
