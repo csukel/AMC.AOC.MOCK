@@ -51,6 +51,18 @@ sap.ui.define(
 						this.getRouter().navTo("homepage",{},bReplace);
 					}
 
+				},
+/*				showDialogWithTable: function(oEvent){
+					var oPopover = this.byId("searchPopover");
+					var oSource = oEvent.getSource();
+					//oPopover.bindElement(oSource.getBindingContext().getPath());
+					// open dialog
+					oPopover.openBy(oSource);
+
+				}*/
+				showFindItemsPanel: function(oEvent){
+					var oPanel = this.getView().byId("searchItemsPanel");
+					oPanel.setExpanded(true);
 				}
 
 			});

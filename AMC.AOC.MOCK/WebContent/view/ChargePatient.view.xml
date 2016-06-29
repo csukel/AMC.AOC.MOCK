@@ -1,10 +1,19 @@
 <mvc:View controllerName="amc.aoc.controller.ChargePatient"
 	xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic"
-	xmlns:f="sap.ui.layout.form">
+	xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:t="sap.ui.table">
 
 	<semantic:FullscreenPage id="chargePatient"
 		title="{i18n>chargePatientTitle}" showNavButton="true" navButtonPress="onNavBack">
 
+		<semantic:subHeader>
+			<Toolbar>
+				<SearchField placeholder="{i18n>chargePatientSearchItemText}"
+					search="showFindItemsPanel" />
+
+				<Button text="View all Charged Medicines" />
+				<Button text="View all Charged Consumables" />
+			</Toolbar>
+		</semantic:subHeader>
 		<ObjectHeader icon="sap-icon://person-placeholder" title="{patients>Surname} {patients>Name}"
 			number="{patients>Age}Y">
 			<attributes>
@@ -19,6 +28,23 @@
 					}" />
 			</firstStatus>
 		</ObjectHeader>
+		<Panel id="searchItemsPanel" expanded="false" expandable="true">
+			<Button text="click me" />
+		</Panel>
+		<Panel>
+			<t:Table rows="{/ProductCollection}" title="Products"
+				selectionMode="MultiToggle" visibleRowCount="7">
+				<t:columns>
+					<t:Column width="11rem">
+						<Label text="Product Name" />
+						<t:template>
+							<Text text="{Name}" />
+						</t:template>
+					</t:Column>
+				</t:columns>
+			</t:Table>
+		</Panel>
+
 		<!-- <VBox class="sapUiSmallMargin"> <Button text="Click me"></Button> 
 			<f:SimpleForm id="SimpleFormDisplay354" maxContainerCols="2" editable="false" 
 			layout="ResponsiveGridLayout" title="Patient's Info" labelSpanL="3" labelSpanM="3" 
@@ -34,13 +60,17 @@
 			<semantic:PositiveAction text="{i18n>confirmButtonText}"
 				press="onConfirmButtonPressed" />
 		</semantic:positiveAction>
-		<semantic:cancelAction class="customCancelButton">
-			<semantic:CancelAction class="customCancelButton"
-				press="onCancel" />
+		<semantic:cancelAction>
+			<semantic:CancelAction press="onNavBack" />
 		</semantic:cancelAction>
 
-<!-- 		<semantic:customFooterContent>
-			<Button text="{i18n>cancelButtonText}" class="customCancelButton" press="onCancelButtonPressed" />
-		</semantic:customFooterContent> -->
+		<!-- <semantic:customFooterContent> <Button text="View all Charged Medicines" 
+			/> <Button text="View all Charged Consumables" /> </semantic:customFooterContent> -->
+
+
+		<!-- <semantic:dependents> <ResponsivePopover title="Search Items" placement="Bottom" 
+			class="sapUiPopupWithPadding" id="searchPopover"> <content> <Text text="test" 
+			/> <Button text="click me"/> </content> </ResponsivePopover> </semantic:dependents> -->
+
 	</semantic:FullscreenPage>
 </mvc:View>

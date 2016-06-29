@@ -1,72 +1,60 @@
-<mvc:View 
-	controllerName = "amc.aoc.controller.Patients"
-	xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout"
-	xmlns:semantic="sap.m.semantic" xmlns:form="sap.ui.layout.form"
-	height = "100%">
-	
-					<HBox  justifyContent="Center" >
-							<SearchField 
-								placeholder ="{i18n>searchPlaceholder}" 
-								search="onSearch" 
-								width="auto">
-							</SearchField>						
+<mvc:View controllerName="amc.aoc.controller.Patients" xmlns="sap.m"
+	xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout"
+	xmlns:semantic="sap.m.semantic" xmlns:form="sap.ui.layout.form" height="100%" >
 
-<!-- 						<ComboBox class = "sapUiLargeMarginBegin" selectedKey="Name"  id="cbSearchCriteria"
-							items="{
-								path: 'homepage_tabs>/criteria_filters',
-								sorter: { path: 'homepage_tabs>Criteria' }
-								}">
-							<core:Item id="comboBoxItem" key="{homepage_tabs>ID}" text="{homepage_tabs>Criteria}" />
-							
-						</ComboBox>		 -->			
-				</HBox>
-					<TileContainer
-							id="tileContainer"
-							tiles="{patients>/Patient}"
-							height = "100%"
-							>
-							<CustomTile class = "myCustomTile sapUiSmallMarginEnd sapUiSmallMarginBottom" press ="onPatientTilePress">
-								<content>
-								
-								<ObjectHeader class="myCustomObjectHeader" 
-									id="objectItem"
-									responsive="true"
-									title= "{
+	<HBox justifyContent="Center">
+		<SearchField placeholder="{i18n>searchPlaceholder}"
+			search="onSearch" width="auto">
+		</SearchField>
+
+		<!-- <ComboBox class = "sapUiLargeMarginBegin" selectedKey="Name" id="cbSearchCriteria" 
+			items="{ path: 'homepage_tabs>/criteria_filters', sorter: { path: 'homepage_tabs>Criteria' 
+			} }"> <core:Item id="comboBoxItem" key="{homepage_tabs>ID}" text="{homepage_tabs>Criteria}" 
+			/> </ComboBox> -->
+	</HBox>
+	<l:Grid id="gridPatientsContainer" content="{patients>/Patient}"> 
+		<l:content>
+			<ObjectListItem
+				class="myCustomObjectListPatientCard"
+				title="{
 										parts:['patients>Surname','patients>Name'],
 										formatter: '.formatter.formatPatientFullName'
 									}"
-									intro= "Att. Ph: {patients>Physician}"
-									number="{patients>Age}"
-									numberUnit = "Y"
-									>
-									<attributes>
-										<ObjectAttribute 
-											text = "{patients>Room}"/>
-									</attributes>
-									<statuses>
-										<ObjectStatus
-											iconDensityAware = "false" 
-											icon="{
+
+				number="{patients>Room}"
+				press="onPatientTilePress"
+				type="Active">
+				<attributes>
+					
+					<ObjectAttribute title= "Att. Phys" />
+					<ObjectAttribute text = "{patients>Physician}"/>
+					<!-- <ObjectAttribute title="Room" text="{patients>Room}" /> -->
+				</attributes>
+				<firstStatus>
+					<ObjectStatus iconDensityAware="false"
+						icon="{
 												parts: ['patients>Gender'],
 												formatter: '.formatter.getGenderIcon'
-											}"/>
-									</statuses>
-								</ObjectHeader>
-<!-- 								<form:SimpleForm id="objectForm">
-									<form:content >
-										<Text 
-											text = "{
-												parts: ['patients>Surname','patients>Name','patients>Age','patients>Gender','patients>Room'],
-												formatter: '.formatter.formatPatientDetailsTile'
-											}"
-											/>
-										<Text text="Att. Phys: {patients>Physician}"/>
-									</form:content>
-								</form:SimpleForm> -->
-	
-								</content>
-							</CustomTile>								
-					</TileContainer>		
+											}" />
+				</firstStatus>
+				<secondStatus>
+					<ObjectStatus text="{patients>Age} Y"/>
+				</secondStatus>
+				<layoutData>
+					<l:GridData span="XL2 L3 M6 S12"/>
+				</layoutData>
+			</ObjectListItem>
+		</l:content>
+	</l:Grid>
+	<!-- <TileContainer id="tileContainer" tiles="{patients>/Patient}" height 
+		= "100%" > <CustomTile class = "myCustomTile sapUiSmallMarginEnd sapUiSmallMarginBottom" 
+		press ="onPatientTilePress"> <content> <ObjectHeader class="myCustomObjectHeader" 
+		id="objectItem" responsive="true" title= "{ parts:['patients>Surname','patients>Name'], 
+		formatter: '.formatter.formatPatientFullName' }" intro= "Att. Ph: {patients>Physician}" 
+		number="{patients>Age}" numberUnit = "Y" > <attributes> <ObjectAttribute 
+		text = "{patients>Room}"/> </attributes> <statuses> <ObjectStatus iconDensityAware 
+		= "false" icon="{ parts: ['patients>Gender'], formatter: '.formatter.getGenderIcon' 
+		}"/> </statuses> </ObjectHeader> </content> </CustomTile> </TileContainer> -->
 
 
 </mvc:View>

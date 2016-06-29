@@ -10,9 +10,13 @@
 	background-color:#3BB2AC;
 }
 
+/* .sapUiBody{
+	background-color:#3BB2AC !important;
+}
+ */
 
 .sapMSplitContainerHideMode>.sapMSplitContainerDetail .sapMITB.sapUiResponsiveContentPadding>.sapMITBContainerContent>.sapMITBContent, .sapMITB.sapUiResponsiveContentPadding>.sapMITBContainerContent>.sapMITBContent{
-	background-color:#3BB2AC;
+	/* background-color:#3BB2AC; */
 }
 
 .sapMOHRTitleTextContainer{
@@ -31,3 +35,14 @@
     background: orangered;
 }
 
+.myCustomObjectListPatientCard{
+   /*  width: 17rem;
+    height: 7rem; */
+    background-color:#DFF1F3;
+}
+
+/*  .sapMITBContent{
+	background-color:#3BB2AC;
+} 
+
+ */

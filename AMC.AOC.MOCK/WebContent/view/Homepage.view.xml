@@ -5,10 +5,10 @@
 	
 	<semantic:FullscreenPage id = "homepage" title="{i18n>homepageTitle}" showFooter ="false">
 
-
+<!-- stretchContentHeight="true" -->
 	<IconTabBar 
 		select="onIconTabBarSelect"
-		stretchContentHeight="true"
+		 
 		id="idIconTabBarNoIcons"
 		expanded="true"
 		class="sapUiResponsiveContentPadding "
@@ -21,8 +21,9 @@
 				id = "tab"
 				text="{homepage_tabs>text}"
 				key = "{homepage_tabs>text}"
+				
 				>
-				<content >
+				<content class="myIconTabFilterContent">
 					<mvc:XMLView viewName = "amc.aoc.view.Patients"/> 
 				
 				</content>

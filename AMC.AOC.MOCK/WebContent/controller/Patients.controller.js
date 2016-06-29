@@ -44,8 +44,9 @@ sap.ui.define(
 						oFilters.push(oSurnameFilter);
 					}
 					//var oTileContainer = this.getView().byId("__component0---homepage--tileContainer-__component0---homepage--idIconTabBarNoIcons--header-0");
-					var oTileContainer = this.getView().byId("tileContainer");
-					var oBinding = oTileContainer.getBinding("tiles");
+					//var oTileContainer = this.getView().byId("tileContainer"); 
+					var oTileContainer = this.getView().byId("gridPatientsContainer");
+					var oBinding = oTileContainer.getBinding("content");
 
 					var aFilters = new Filter(oFilters,false);
 

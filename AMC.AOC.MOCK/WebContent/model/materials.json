@@ -1,0 +1,25 @@
+{
+	"Materials" :[
+	              {
+	            	  "MaterialId" :1,
+	            	  "MaterialDesc":"Perskindol",
+	            	  "Quantity" : 10
+	            		  
+	              },
+	              {
+	            	  "MaterialId" :2,
+	            	  "MaterialDesc":"Arcoxia",
+	            	  "Quantity" : 20
+	            		  
+	              },
+	              {
+	            	  "MaterialId" :3,
+	            	  "MaterialDesc":"Panadol",
+	            	  "Quantity" : 30
+	            		  
+	              }
+	              
+	              
+	              ]
+
+}
